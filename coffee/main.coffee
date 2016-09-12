@@ -1,7 +1,5 @@
 $(document).ready ->
-  
   i = document.getElementById('menu').style
-
   menu = (x, y) ->
     i.top = y + 'px'
     i.left = x + 'px'
