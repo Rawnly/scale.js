@@ -61,6 +61,8 @@ You can also quickly change the **font weight**  and **font family**  and the **
 
 With Classes the page class has `16px` of font-size by default, so you can manipulate it with `xSize` class
 
+**MAYBE THIS WILL BE REPLACED WITH --[Scale.js](http://github.com/rawnly/scale.js)--**
+
 | Class | Size (in px) | Size (in %) |
 | --- | :---: | :---:     |
 | `.x1` |  20px | 125%    |
@@ -94,7 +96,7 @@ Is so simple you just add (always with the `font` class) and the align class who
 * `.clear` for no text-decoration
 * `.dark` for light background
 * `.light` for dark background
-* `.underline` for underline animation
+* `.an` for underline animation
 
 **Text Decoration**
 ----
