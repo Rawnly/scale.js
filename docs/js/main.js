@@ -15,7 +15,7 @@ $(document).ready(function() {
       menu(posX, posY);
       e.preventDefault();
     }), false);
-    document.addEventListener('mousemove', (function(e) {
+    document.addEventListener('click', (function(e) {
       i.opacity = '0';
       setTimeout((function() {
         i.visibility = 'hidden';

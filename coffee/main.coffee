@@ -1,4 +1,5 @@
 $(document).ready ->
+  
   i = document.getElementById('menu').style
 
   menu = (x, y) ->

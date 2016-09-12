@@ -59,6 +59,7 @@ $c:#25373D;
 .minibtn--container {
   position:absolute;
   left:50%;
+  transform:translateX(-50%);
   margin-top:27vh;
   display: table;
 
@@ -69,7 +70,6 @@ $c:#25373D;
 
   .minibtn {
     position:relative;
-    left:-50%;
 
     transition:all .3s ease;
     position:relative;
@@ -109,7 +109,7 @@ $c:#25373D;
 
 mark {
   background-color:rgba(#000, .2);
-  color: #fff;
+  color: inherit;
 }
 
 
