@@ -1,4 +1,5 @@
 $c:#25373D;
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 
  body {
   color: #fff;
@@ -59,42 +60,52 @@ $c:#25373D;
   position:absolute;
   left:50%;
   margin-top:27vh;
+  display: table;
+
+  * {
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+  }
 
   .minibtn {
     position:relative;
     left:-50%;
-
-    a {
-      color: white;
-    }
 
     transition:all .3s ease;
     position:relative;
     border: 3px #fff solid;
     color: #fff;
     background:transparent;
-    padding: 10px;
-
-    font-family: 'Oswald';
+    font-family: 'Montserrat';
     letter-spacing: 3px;
     text-align:center;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 2vw;
 
+    padding: 12px 32px 12px 32px;
+
     &:hover {
       cursor:pointer;
       background:#fff;
       border:3px #fff solid;
       color:#000;
-
-
       a {
         color: black;
       }
     }
+
+    a {
+      color: white;
+    }
+
   }
 }
+
+.minibtn.arrow {
+  padding: 12px;
+}
+
 
 mark {
   background-color:rgba(#000, .2);
@@ -131,4 +142,15 @@ mark {
   width: auto;
   padding: 5px;
   position: relative;
+}
+
+@media screen and (max-width: 680px) {
+  .minibtn--container {
+    .minibtn.arrow {
+      visibility: hidden;
+      opacity:0;
+      display:hidden;
+    }
+    display: table;
+  }
 }

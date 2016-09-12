@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 body {
   color: #fff;
   background-color: #25373D;
@@ -42,7 +43,11 @@ body {
 .minibtn--container {
   position: absolute;
   left: 50%;
-  margin-top: 27vh; }
+  margin-top: 27vh;
+  display: table; }
+  .minibtn--container * {
+    margin-left: 2.5px;
+    margin-right: 2.5px; }
   .minibtn--container .minibtn {
     position: relative;
     left: -50%;
@@ -51,15 +56,13 @@ body {
     border: 3px #fff solid;
     color: #fff;
     background: transparent;
-    padding: 10px;
-    font-family: 'Oswald';
+    font-family: 'Montserrat';
     letter-spacing: 3px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 2vw; }
-    .minibtn--container .minibtn a {
-      color: white; }
+    font-size: 2vw;
+    padding: 12px 32px 12px 32px; }
     .minibtn--container .minibtn:hover {
       cursor: pointer;
       background: #fff;
@@ -67,6 +70,11 @@ body {
       color: #000; }
       .minibtn--container .minibtn:hover a {
         color: black; }
+    .minibtn--container .minibtn a {
+      color: white; }
+
+.minibtn.arrow {
+  padding: 12px; }
 
 mark {
   background-color: rgba(0, 0, 0, 0.2);
@@ -95,3 +103,11 @@ mark {
   width: auto;
   padding: 5px;
   position: relative; }
+
+@media screen and (max-width: 680px) {
+  .minibtn--container {
+    display: table; }
+    .minibtn--container .minibtn.arrow {
+      visibility: hidden;
+      opacity: 0;
+      display: hidden; } }

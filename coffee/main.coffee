@@ -16,7 +16,7 @@ $(document).ready ->
       e.preventDefault()
       return
     ), false
-    document.addEventListener 'mousemove', ((e) ->
+    document.addEventListener 'click', ((e) ->
         i.opacity = '0'
         setTimeout (->
           i.visibility = 'hidden'
