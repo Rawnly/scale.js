@@ -13,14 +13,14 @@ Download the file and include `scale.js` in your document after including jQuery
 ### Via data attributes
 To easily scale an element, add `data-scale` to the element you want to use, and specify a scale factor ( see the example below), then you can also specify a unit for responsive text  ( like `vh` or `vh` or something else ) by adding `data-unit` to the same element.
 
-**Syntax : **
+**Syntax:**
 ```html
 <p data-scale="$factor" data-unit="$unit" style=" font-size='10px' "> Sample </p>
 <!-- Text size will be -->
 <!-- 10 x $factor = $result $unit -->
 ```
 
-**Example : **
+**Example:**
 
 ```html
 <p data-scale="0.2" data-unit="vw" style=" font-size='10px' "> Hello World </p>
@@ -33,7 +33,7 @@ To call the scale plugin manually, simply select your target element with **jQue
 ```javascript
 	$("selector").scale( factor, { u: 'unit' } );
 ```
-** Example : **
+**Example:**
 ```javascript
     $('selector').scale( 1, { u: 'px' } );
 ```
@@ -44,7 +44,7 @@ To call the scale plugin manually, simply select your target element with **jQue
 * Please report bugs via [mail](mailto:rawnlydev@gmail.com) or open an issue here on GitHub.
 
 # Changelog
-* [ 12/09/2016 ] *v0.1.0* - Scale.js was born!
+* [ 12/09/2016 ] **v0.1.0** - Scale.js was born!
 
 # LICENSE
 #### The MIT License (MIT)
