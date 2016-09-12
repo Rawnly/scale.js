@@ -1,4 +1,5 @@
 # Scale.js
+- [Usage][##usage]
 ## Include
 -----
 Download the file and include `scale.js` in your document after including jQuery.
