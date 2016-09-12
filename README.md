@@ -1,10 +1,10 @@
 # Scale.js
 
-- [Include][https://github.com/Rawnly/scale.js/blob/master/README.md#include]
-- [Usage][https://github.com/Rawnly/scale.js/blob/master/README.md#usage]
-- [Note][https://github.com/Rawnly/scale.js/blob/master/README.md#note]
-- [Changelog][https://github.com/Rawnly/scale.js/blob/master/README.md#changelog]
-- [LICENSE][https://github.com/Rawnly/scale.js/blob/master/README.md#license]
+- [Include] (https://github.com/Rawnly/scale.js/blob/master/README.md#include)
+- [Usage] (https://github.com/Rawnly/scale.js/blob/master/README.md#usage)
+- [Note] (https://github.com/Rawnly/scale.js/blob/master/README.md#note)
+- [Changelog] (https://github.com/Rawnly/scale.js/blob/master/README.md#changelog)
+- [LICENSE] (https://github.com/Rawnly/scale.js/blob/master/README.md#license)
 
 
 ## Include
