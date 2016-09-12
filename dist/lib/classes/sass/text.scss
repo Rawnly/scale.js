@@ -1,0 +1,213 @@
+$text-color: #fff;
+@import 'mdl_colors';
+
+$transition : all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+.elastic {
+  -webkit-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -moz-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -o-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+//Basic texts formats
+p.font.p {
+  margin: 0 30px 0 30px;
+}
+
+//Font Sizes
+// NOTE: MAYBE THIS WILL BE REPLACED WITH SCALE.JS
+.font.x1 {
+  font-size: 125%;
+}
+.font.x2 {
+  font-size: 218.75%;
+}
+.font.x3 {
+  font-size: 312.5%;
+}
+.font.x4 {
+  font-size: 406.25%;
+}
+.font.x5 {
+  font-size: 500%;
+}
+.font.x6 {
+  font-size: 593.75%;
+}
+
+//Font Weights
+.font.superbold {
+  font-weight: 800;
+}
+.font.boldest {
+  font-weight: 700;
+}
+.font.bolder {
+  font-weight: 600;
+}
+.font.bold {
+  font-weight: 500;
+}
+.font.normal {
+  font-weight: 400;
+}
+.font.thin {
+  font-weight: 300;
+}
+.font.thinner {
+  font-weight: 200;
+}
+.font.thinnest {
+  font-weight: 100;
+}
+
+//Font Families
+.font.bitter         {font-family: 'Bitter',       serif}
+.font.roboto-slab    {font-family: 'Roboto Slab',  serif}
+.font.roboto         {font-family: 'Roboto',       sans-serif}
+.font.oswald         {font-family: 'Oswald',       sans-serif}
+.font.muli           {font-family: 'Muli',         sans-serif}
+.font.josefin-sans   {font-family: 'Josefin Sans', sans-serif}
+.font.indie-flower   {font-family: 'Indie Flower', cursive}
+.font.lobster        {font-family: 'Lobster',      cursive}
+.font.satisfy        {font-family: 'Satisfy',      cursive}
+.font.courgette      {font-family: 'Courgette',    cursive}
+.font.bungee         {font-family: 'Bungee', cursive}
+
+//Links basic format
+a.clear {
+  text-decoration: none;
+  &:visited {
+    text-decoration: none;
+  }
+  &:link {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}
+
+
+//Link styles
+a.light {
+  color: $text-color;
+  &:hover {
+    color: darken($text-color, 20%);
+  }
+  &:visited {
+    color: $text-color;
+  }
+  &:link {
+    color: $text-color;
+  }
+  &:active {
+    color: darken($text-color, 23%);
+  }
+}
+a.dark {
+  color: darken($text-color, 100%);
+  &:hover {
+    color: lighten(darken($text-color, 100%), 20%);
+  }
+  &:visited {
+    color: darken($text-color, 100%);
+  }
+  &:link {
+    color: darken($text-color, 100%);
+  }
+  &:active {
+    color: lighten(darken($text-color, 100%), 33%);
+  }
+}
+
+//Font Align
+.font.left {
+  text-align: left;
+}
+.font.center {
+  text-align: center;
+}
+.font.justify {
+  text-align: justify;
+}
+.font.right {
+  text-align: right;
+}
+
+//Font Decorations
+.font.underline {
+  text-decoration: underline;
+}
+.font.overline {
+  text-decoration: overline;
+}
+.font.strike {
+  text-decoration: line-through;
+}
+
+a.an {
+  cursor:pointer;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition: all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  }
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  &:active:before {
+    visibility: visible;
+    opacity: 0.7;
+  }
+}
+
+a.an.dark {
+  cursor:pointer;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    transition: all 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  }
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  &:active:before {
+    visibility: visible;
+    opacity: 0.7;
+  }
+}

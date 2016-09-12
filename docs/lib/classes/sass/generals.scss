@@ -1,0 +1,65 @@
+@import 'mdl_colors';
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+body {
+  margin: 0;
+  font-weight: 500;
+}
+
+.footer {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  height: 50px;
+  width: 100%;
+
+
+  padding: 1% 5%;
+
+  div {
+    display:block;
+  }
+}
+
+.cl-section {
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  min-width: 100%;
+  color: $white;
+  font-family: 'Muli' sans-serif, 'Roboto' serif, Arial;
+  font-weight: 400;
+  background-color: $indigo-500;
+  height: 100vh;
+
+  a, u, i, b {
+    color: $pink-A2;
+  }
+
+  &:nth-of-type(2n) {
+    background-color: $indigo-800;
+  }
+
+  div.content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.page-centered {
+  top:50%;
+  left:50%;
+  transform:translateX(-50%) translateY(-50%);
+}
