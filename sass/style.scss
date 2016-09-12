@@ -1,0 +1,134 @@
+$c:#25373D;
+
+ body {
+  color: #fff;
+  background-color: $c;
+  font-family: 'Muli';
+  height: 100vh;
+  overflow: -moz-scrollbars-none;  // Firefox
+  -ms-overflow-style: none;  // IE 10+
+  &::-webkit-scrollbar {
+    display: none;  // Safari and Chrome
+  }
+  *::selection {
+    color: inherit;
+    background:rgba(#000, 0.1);
+  }
+}
+
+.elastic {
+  -webkit-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -moz-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -o-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+}
+
+
+.title {
+  font-family: 'Oswald';
+  letter-spacing: 3px;
+  text-align:center;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+  font-size: 7vw;
+
+  .glyphicon {
+    color: #fff
+  }
+}
+
+
+.parallax-window {
+  height: 100vh;
+  h1 {
+    margin:0;
+    padding:20px;
+  }
+}
+
+.cl-section {
+  background:transparent;
+  &:nth-of-type(2n) {
+    background-color: transparent;
+  }
+}
+
+
+.minibtn--container {
+  position:absolute;
+  left:50%;
+  margin-top:27vh;
+
+  .minibtn {
+    position:relative;
+    left:-50%;
+
+    a {
+      color: white;
+    }
+
+    transition:all .3s ease;
+    position:relative;
+    border: 3px #fff solid;
+    color: #fff;
+    background:transparent;
+    padding: 10px;
+
+    font-family: 'Oswald';
+    letter-spacing: 3px;
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2vw;
+
+    &:hover {
+      cursor:pointer;
+      background:#fff;
+      border:3px #fff solid;
+      color:#000;
+
+
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+mark {
+  background-color:rgba(#000, .2);
+  color: #fff;
+}
+
+
+
+
+
+#menu {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  background: #fff;
+  color: #000;
+  font-family: 'Oswald';
+  text-transform:uppercase;
+  font-size: .8vw;
+
+  -webkit-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -moz-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  -o-transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+  transition: all .3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+
+  padding: 0px;
+  border: 0px;
+}
+
+#menu span {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  width: auto;
+  padding: 5px;
+  position: relative;
+}
