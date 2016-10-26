@@ -52,7 +52,7 @@ To call the scale plugin manually, simply select your target element with **jQue
 * Please report bugs via [mail](mailto:rawnlydev@gmail.com) or open an issue here on GitHub.
 
 # Changelog
-* [ 12/09/2016 ] **v0.1.0** - Scale.js was born!
+* [ 12/09/2016 ] **v0.1.0** - Scale.js: "Hello World!"
 
 # LICENSE
 #### The MIT License (MIT)
