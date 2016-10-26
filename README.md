@@ -47,7 +47,7 @@ To call the scale plugin manually, simply select your target element with **jQue
 ```
 # Note:
 
-* To make a text responsive you need to scale it via JavaScript, in case don't worry about console who alerts you about there aren't targets with `data-scale` / `data-unit` attributes.
+* To make a text responsive you need to scale it via JavaScript, in this case don't worry if console alerts you who there aren't targets with `data-scale` / `data-unit` attributes.
 
 * Please report bugs via [mail](mailto:rawnlydev@gmail.com) or open an issue here on GitHub.
 
