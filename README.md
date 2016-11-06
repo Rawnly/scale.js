@@ -12,9 +12,8 @@
 Download the file and include `scale.js` in your document after including jQuery.
 ```html
 	<!-- Your <head> -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-	<script src="https://cdn.rawgit.com/Rawnly/scale.js/master/dist/js/scale.js" > </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://rawgit.com/Rawnly/scale.js/master/dist/js/scale.js" > </script>
 ```
 ## Usage
 --------
