@@ -22,9 +22,9 @@ To easily scale an element, add `data-scale` to the element you want to use, and
 
 **Syntax:**
 ```html
-<p data-scale="$factor" data-unit="$unit" style=" font-size='10px' "> Sample </p>
+<p data-scale="factor" data-unit="unit" style=" font-size='10px' "> Sample </p>
 <!-- Text size will be -->
-<!-- 10 x $factor = $result $unit -->
+<!-- 10 x factor = result unit -->
 ```
 
 **Example:**
@@ -38,11 +38,11 @@ To easily scale an element, add `data-scale` to the element you want to use, and
 ### Via Javascript
 To call the scale plugin manually, simply select your target element with **jQuery** and do the following:
 ```javascript
-	$("selector").scale( factor, { u: 'unit' } );
+	$("selector").scale( factor, { unit: 'unit' } );
 ```
 **Example:**
 ```javascript
-    $('selector').scale( 1, { u: 'px' } );
+    $('selector').scale( 1, { unit: 'px' } );
 ```
 # Note:
 
@@ -51,6 +51,7 @@ To call the scale plugin manually, simply select your target element with **jQue
 * Please report bugs via [mail](mailto:rawnlydev@gmail.com) or open an issue here on GitHub.
 
 # Changelog
+* [ 06/11/2016 ] **v0.1.5** - Fixed Javascript Method and cleaned the code
 * [ 12/09/2016 ] **v0.1.0** - Scale.js: "Hello World!"
 
 # LICENSE
