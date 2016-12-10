@@ -1,4 +1,4 @@
-// FIXME: THIS IS A BETA, MAYBE YOU WILL FIND BUGS AND ERRORS
+// THIS IS A BETA, MAYBE YOU WILL FIND BUGS AND ERRORS
 
 (function( $ ) {
   $.fn.scale = function ( factor, options ) {
