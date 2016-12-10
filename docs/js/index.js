@@ -3,10 +3,18 @@ $(document).ready(function() {
   d();
 
   $('#run').click(function () {
-    if ( $('.title').scale(1, { mode: 'return' }) < 144 ) {
-      $('.title').scale(2);
-    } else {
-      console.warn('TOO BIG!');
+    if (screen.width <= 800) {
+      if ( $('.title').scale(2, { mode: 'return' }) <= 144 ) {
+        $('.title').scale(2);
+      } else {
+        console.warn('TOO BIG!');
+      }
+    } else if ( screen.width <= 1200 ) {
+      if ( $('.title').scale(2, { mode: 'return' }) <= 288 ) {
+        $('.title').scale(2);
+      } else {
+        console.warn('TOO BIG!');
+      }
     }
   });
 

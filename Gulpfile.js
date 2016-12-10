@@ -14,7 +14,7 @@ gulp.task('default', function () {
   // Watch files and call the task
   gulp.watch('./coffee/**/*.coffee', ['coffee']);
   gulp.watch('./sass/**/*.scss', ['sass']);
-  gulp.watch('./dist/**/**', ['reload']);
+  gulp.watch('./docs/**/**', ['reload']);
 
   // More Specific
   // gulp.watch('./dist/**/*.html', ['reload']);
@@ -23,8 +23,8 @@ gulp.task('default', function () {
   // BrowserSync init :)
   browserSync.init({
       server: {
-          baseDir: "./dist/example/",
-          proxy: 'mylocal.dev'
+          baseDir: "./docs/",
+          proxy: 'scalejs.dev'
       }
   });
 });
@@ -55,7 +55,7 @@ gulp.task('reload', function() {
 // If you want create a php local server
 gulp.task('phpserver', function() {
   connect.server({
-    base: './dist'
+    base: './docs/'
   }, function () {
     browserSync({
       proxy: '0.0.0.0:8000'

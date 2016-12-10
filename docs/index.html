@@ -19,7 +19,7 @@
     <!-- BootStrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script src="../scale-beta.js"></script>
+    <script src="js/ex-scale.js"></script>
 
     <!-- Personal JS -->
     <script src="js/index.js" charset="utf-8"></script>
@@ -34,17 +34,19 @@
   </head>
   <body>
     <!-- This shoud be 64px -->
-    <h1 class="title" data-scale="2"></h1>
+    <h1 class="title"></h1>
 
     <div class="test">
       <button id="run" type="button"> < / RUN > </button>
       <pre>
         // main.js
         <code>
-          <span class="fun">$</span><span class="brackets">(</span><span class="virgolette">'</span><span class="string">h1</span><span class="virgolette">'</span><span class="brackets">)</span><span class="brackets">.</span><span class="fun">scale</span><span class="brackets">(</span><span class="operators">2</span><span class="brackets">,</span><span class="brackets">{</span><span class="string">unit</span><span class="operators">:</span><span class="virgolette">'</span><span class="string">px</span><span class="virgolette">'</span><span class="brackets">}</span><span class="brackets">)</span>
+          <span class="fun">$</span><span class="brackets">(</span><span class="virgolette">'</span><span class="string">.title</span><span class="virgolette">'</span><span class="brackets">)</span><span class="brackets">.</span><span class="fun">scale</span><span class="brackets">(</span><span class="operators">2</span><span class="brackets">,</span><span class="brackets">{</span><span class="string">unit</span><span class="operators">:</span><span class="virgolette">'</span><span class="string">px</span><span class="virgolette">'</span><span class="brackets">}</span><span class="brackets">)</span>
           <br>
           // Return:
           <span class="virgolette">"</span><span class="string">64px</span><span class="virgolette">"</span>
+
+          // This script will scale (x2) the title
         </code>
       </pre>
     </div>
