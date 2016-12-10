@@ -27,7 +27,7 @@ To easily scale an element, add `data-scale` to the element you want to use, and
 <!-- 10 x factor = result unit -->
 ```
 
-**Example:**
+**Example**
 
 ```html
 <p data-scale="0.2" data-unit="vw" style=" font-size='10px' "> Hello World </p>
@@ -40,18 +40,20 @@ To call the scale plugin manually, simply select your target element with **jQue
 ```javascript
 	$("selector").scale( factor, { unit: 'unit' } );
 ```
-**Example:**
+**[Example][example]**
 ```javascript
     $('selector').scale( 1, { unit: 'px' } );
 ```
+
+
 # Note:
 
 * To make a text responsive you need to scale it via JavaScript, in this case don't worry if console alerts you who there aren't targets with `data-scale` / `data-unit` attributes.
 
-* Please report bugs via [mail](mailto:rawnlydev@gmail.com) or open an issue here on GitHub.
+* Please report bugs via [mail](mailto:dev.rawnly@gmail.com) or open an issue here on GitHub.
 
 # Changelog
-* [ 10/12/2016 ] **v0.1.6** - Optimized the JS Algoritm.
+* [ 10/12/2016 ] **v0.1.6** - :bulb: Optimized the JS Algoritm.
 * [ 06/11/2016 ] **v0.1.5** - Fixed some issues and cleaned the code.
 * [ 12/09/2016 ] **v0.1.0** - Scale.js: "Hello World!"
 
@@ -71,3 +73,6 @@ WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEM
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 **
+
+
+[example]: https://rawnly.github.io/scale.js/
