@@ -1,4 +1,4 @@
-// STABLE 0.1.6
+// STABLE v0.1.6
 (function( $ ) {
   $.fn.scale = function ( factor, options ) {
     "use strict";
