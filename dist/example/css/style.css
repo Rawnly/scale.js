@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html {
+  font-size: 18px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+
+  position: absolute;
+  left: 50%;
+  top: 35%;
+
+  transform: translate(-50%, -50%);
+
+  font-size: 4em;
+
+  animation: 5s shade infinite alternate;
+}
+
+
+pre {
+  background: #222;
+  color: #999;
+
+  padding: 10px;
+}
+
+.test {
+  position: absolute;
+  left: 50%;
+  top: 76%;
+  transform: translateX(-50%);
+  width: 50vw;
+  height: auto;
+}
+
+#run {
+  margin-bottom: 10px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+
+  background: #222;
+  color: #fff;
+
+  border: 3px solid #222;
+  padding: 5px 15px 5px 15px;
+
+  transition: .3s all ease;
+
+  font-family: 'Oswald';
+}
+#run:hover {
+  background: transparent;
+  color: #222;
+}
+
+@media screen and ( max-width: 800px ) {
+  .test {
+    width: 100vw;
+  }
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and ( max-width: 500px ) {
+  .test {
+    width: 100vw;
+  }
+  html {
+    font-size: 2px;
+  }
+}
+
+.string {
+  color: rgb(168,235,27);
+}
+.virgolette {
+  color: rgb(203,245,151)
+}
+.brackets {
+  color: rgb(18,246,191)
+}
+.fun {
+  color : rgb(1,215,252)
+}
+.operators {
+  color: rgb(251,0,75)
+}
+.arrText {
+  color: rgb(60,189,49)
+}
+
+@keyframes shade {
+    from {
+        color: #7a7a7a;
+    }
+    15% {
+        color: #65778b;
+    }
+    30% {
+        color: #42b37f;
+    }
+    45% {
+        color: #1fe0b6;
+    }
+    60% {
+        color: #62afbc;
+    }
+    75% {
+        color: #7f42b3;
+    }
+    to {
+        color: #e01f48;
+    }
+}

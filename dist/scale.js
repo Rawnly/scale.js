@@ -1,3 +1,4 @@
+
 (function( $ ) {
   $.fn.scale = function ( factor, options ) {
     "use strict";
@@ -21,19 +22,23 @@
     // Options, case if unit is not defined use pixels.
     settings = $.extend({
       unit: 'px',
+      mode: 'apply',
     }, options);
 
-    // Remove last 2 characters from the string ( px or em etc.. )
-    l = me.css('font-size').length - 2;
 
-    // Clean size without unit
-    size = me.css('font-size').slice(0, l);
+    size = me.css('font-size').match(/\d+/)[0]
 
-    // Calc the final size. ( size by factor )
-    me.css('font-size', size * factor + settings.unit );
 
-    // Return the final size
-    return size * factor + settings.unit;
+    if ( settings.mode == 'return' ) {
+      // Return the final size
+      return size * factor
+    } else if ( settings.mode == 'apply' ) {
+      // Calc the final size. ( size by factor )
+      me.css('font-size', size * factor + settings.unit );
+    } else {
+      console.error('Error! Line 31 of scale-beta.js');
+    }
+
   }
 } ( jQuery ) );
 
@@ -64,7 +69,7 @@ $(document).ready(function() {
 
       // Apply configuration to each element who has `data-scale` attr
       $.each( $(el), function () {
-        $(this).css('font-size', str.fSize.slice( 0, str.leng - 2 ) * str.factor + str.unit )
+        $(this).css('font-size', str.fSize.match(/\d+/)[0] * str.factor + str.unit )
       } );
 
     } else if ( !$(el).data('unit') && $(el).data('scale') ) {
@@ -78,7 +83,7 @@ $(document).ready(function() {
 
       // Apply configuration to each element who has `data-scale` attr
       $.each( $(el), function () {
-        $(this).css('font-size', str.fSize.slice( 0, str.leng - 2 ) * str.factor + str.unit )
+        $(this).css('font-size', str.fSize.match(/\d+/)[0] * str.factor + str.unit )
       } );
 
       console.warn('No unit defined! Default is `px`. (Scale.js)');
@@ -96,5 +101,6 @@ $(document).ready(function() {
 
   };
 
+  // Init
   scale( $('[data-scale]') );
 });

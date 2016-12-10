@@ -13,7 +13,7 @@ Download the file and include `scale.js` in your document after including jQuery
 ```html
 	<!-- Your <head> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-	<script src="https://rawgit.com/Rawnly/scale.js/master/dist/js/scale.js" > </script>
+	<script src="https://rawgit.com/Rawnly/scale.js/master/dist/scale.js" > </script>
 ```
 ## Usage
 --------
@@ -51,7 +51,8 @@ To call the scale plugin manually, simply select your target element with **jQue
 * Please report bugs via [mail](mailto:rawnlydev@gmail.com) or open an issue here on GitHub.
 
 # Changelog
-* [ 06/11/2016 ] **v0.1.5** - Fixed Javascript Method and cleaned the code
+* [ 10/12/2016 ] **v0.1.6** - Optimized the JS Algoritm.
+* [ 06/11/2016 ] **v0.1.5** - Fixed some issues and cleaned the code.
 * [ 12/09/2016 ] **v0.1.0** - Scale.js: "Hello World!"
 
 # LICENSE
